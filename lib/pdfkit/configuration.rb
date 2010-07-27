@@ -7,11 +7,11 @@ class PDFKit
       @wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
       @default_options = {
         :disable_smart_shrinking => true,
-        :page_size => 'Letter',
-        :margin_top => '0.75in',
-        :margin_right => '0.75in',
-        :margin_bottom => '0.75in',
-        :margin_left => '0.75in'
+        :page_size => 'A4',
+        :margin_top => '10mm',
+        :margin_right => '10mm',
+        :margin_bottom => '10mm',
+        :margin_left => '10mm'
       }
     end
   end
