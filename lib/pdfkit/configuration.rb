@@ -4,7 +4,7 @@ class PDFKit
 
     def initialize
       @meta_tag_prefix = 'pdfkit-'
-      @wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
+      @wkhtmltopdf = '/bin/wkhtmltopdf'
       @default_options = {
         :disable_smart_shrinking => true,
         :page_size => 'A4',
