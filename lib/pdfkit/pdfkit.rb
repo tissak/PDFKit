@@ -35,7 +35,7 @@ class PDFKit
     case Config::CONFIG['host_os']
     when /x86_64-linux/i, /linux/i
       # insert xvfb if we are on a linux headless env
-      args = ['xvfb-run  -a -s \'-screen 0 640x480x16\' '].concat(args)
+      args = ['xvfb-run  -a -s \'-screen 0 640x480x16\' /usr/bin/wkhtmltopdf']
     end
 
     args += @options.to_a.flatten.compact
